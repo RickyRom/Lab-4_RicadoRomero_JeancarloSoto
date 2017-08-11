@@ -43,5 +43,16 @@ public  class Mago extends Piezas{
         return tempo;
     }
 
+<<<<<<< HEAD
 
+=======
+    public String[][] comer(String[][] matriz, int x1, int y1, int x2, int y2) {
+        int cont = 0;
+        String temporal[][] = new String[10][10];
+        if (x1 == y1 && x2 == y2) {
+            matriz[x1][y1] = temporal[x2][y2];
+        }
+        return temporal;
+    }
+>>>>>>> c5edfc4436b0346eeb9d34b51df49474c832f9ad
 }
