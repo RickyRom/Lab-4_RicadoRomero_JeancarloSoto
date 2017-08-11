@@ -44,6 +44,6 @@ public abstract class Piezas {
         return "Piezas{" + "color=" + color + ", material=" + material + '}';
     }
     
-    public abstract void movimiento();
-    public abstract void comer();
+    public abstract String[][] movimiento();
+    public abstract String comer();
 }
