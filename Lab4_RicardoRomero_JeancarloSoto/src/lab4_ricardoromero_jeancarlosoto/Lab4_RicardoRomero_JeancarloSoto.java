@@ -144,7 +144,7 @@ public class Lab4_RicardoRomero_JeancarloSoto {
                         int y1;
                         int x2;
                         int y2;
-                        
+
                         System.out.println("Jugador 1 Ingrese la coordenada en x de la pieza que desea mover: ");
                         x1 = sc.nextInt();
                         System.out.println("Jugador 1 Ingrese la coordenada en y de la pieza que desea mover: ");
@@ -162,28 +162,33 @@ public class Lab4_RicardoRomero_JeancarloSoto {
                         int movimiento = sc.nextInt();
                         switch (movimiento) {
                             case 1: {
-
+                                Rey rr = new Rey();
+                                rr.movimiento(tablero, x1, y1, x2, y2);
                             }
                             break;
                             case 2: {
                                 Mago mm = new Mago();
-                                mm.movimiento(tablero,x1,y1,x2,y2);
+                                mm.movimiento(tablero, x1, y1, x2, y2);
                             }
                             break;
                             case 3: {
-
+                                Dragon dd = new Dragon();
+                                dd.movimiento(tablero, x1, y1, x2, y2);
                             }
                             break;
                             case 4: {
-
+                                Duendes ddd = new Duendes();
+                                ddd.movimiento(tablero, x1, y1, x2, y2);
                             }
                             break;
                             case 5: {
-
+                                Arqueros aa = new Arqueros();
+                                aa.movimiento(tablero, x1, y1, x2, y2);
                             }
                             break;
                             case 6: {
-
+                                Caballeros cc = new Caballeros();
+                                cc.movimiento(tablero, x1, y1, x2, y2);
                             }
                             break;
                         }
@@ -214,28 +219,33 @@ public class Lab4_RicardoRomero_JeancarloSoto {
                         int movimiento = sc.nextInt();
                         switch (movimiento) {
                             case 1: {
-
+                                Rey rr = new Rey();
+                                rr.movimiento(tablero, x1, y1, x2, y2);
                             }
                             break;
                             case 2: {
                                 Mago mm = new Mago();
-                                mm.movimiento(tablero,x1,y1,x2,y2);
+                                mm.movimiento(tablero, x1, y1, x2, y2);
                             }
                             break;
                             case 3: {
-
+                                Dragon dd = new Dragon();
+                                dd.movimiento(tablero, x1, y1, x2, y2);
                             }
                             break;
                             case 4: {
-
+                                Duendes ddd = new Duendes();
+                                ddd.movimiento(tablero, x1, y1, x2, y2);
                             }
                             break;
                             case 5: {
-
+                                Arqueros aa = new Arqueros();
+                                aa.movimiento(tablero, x1, y1, x2, y2);
                             }
                             break;
                             case 6: {
-
+                                Caballeros cc = new Caballeros();
+                                cc.movimiento(tablero, x1, y1, x2, y2);
                             }
                             break;
                         }
