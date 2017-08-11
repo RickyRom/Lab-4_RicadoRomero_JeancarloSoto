@@ -37,12 +37,10 @@ public class Rey extends Piezas{
         return nombre;
     }
 
-    @Override
     public String movimiento() {
         
     }
 
-    @Override
     public String comer() {
         
     }

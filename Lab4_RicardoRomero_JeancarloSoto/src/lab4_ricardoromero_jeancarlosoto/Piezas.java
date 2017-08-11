@@ -45,5 +45,5 @@ public abstract class Piezas {
     }
     
     public abstract String[][] movimiento();
-    public abstract String comer();
+    public abstract String[][] comer();
 }
