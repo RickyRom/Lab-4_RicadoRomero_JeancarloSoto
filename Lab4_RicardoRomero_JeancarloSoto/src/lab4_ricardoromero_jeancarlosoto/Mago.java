@@ -14,7 +14,7 @@ import java.awt.Color;
 public class Mago extends Piezas{
     
     String nombre = "M";
-
+    
     public Mago() {
         super();
     }

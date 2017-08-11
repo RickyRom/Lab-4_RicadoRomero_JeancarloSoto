@@ -24,6 +24,7 @@ public class Lab4_RicardoRomero_JeancarloSoto {
         // TODO code application logic here
         System.out.println("Bienvenido a su nuevoi juego de mesa mejorado");
         char r = 's';
+            Jugador j = new Jugador();
         int puntaje = 0;
         ArrayList jugadores = new ArrayList();
         int menuprincipal;
@@ -40,7 +41,7 @@ public class Lab4_RicardoRomero_JeancarloSoto {
                 case 1: {
 //Agregar
 
-                    Jugador j = new Jugador();
+                
                     System.out.println("Ingrese nombre");
                     String nom;
                     j.setNombre(nom = sc.next());
@@ -59,6 +60,7 @@ public class Lab4_RicardoRomero_JeancarloSoto {
                     System.out.println("Su puntaje se sumara de acuerdo al desarollo del juego, actualmente es: " + puntaje);
                     Jugador jj = new Jugador(nom, usuario, nacimiento, sexo, edad);
                     jugadores.add(j);
+                    
 
                 }
                 break;
@@ -134,6 +136,45 @@ public class Lab4_RicardoRomero_JeancarloSoto {
                     tablero[0][2] = dragon.getNombre();
                     tablero[1][5] = dragon.getNombre();
                     tablero[0][7] = dragon.getNombre();
+                    imprimir(tablero);
+                    
+                    int turnos = 0;
+                    if (turnos == 0) {
+                        //TURNOS 
+
+                        int x1;
+                        int y1;
+                        int x2;
+                        int y2;
+                        System.out.println("Ingrese la coordenada en x de la pieza que desea mover: ");
+                        x1 = sc.nextInt();
+                        System.out.println("Ingrese la coordenada en y de la pieza que desea mover: ");
+                        y1 = sc.nextInt();
+                        System.out.println("Ingrese la coordenada en x adonde desea mover: ");
+                        x2 = sc.nextInt();
+                        System.out.println("Ingrese la coordenada en y adonde desea mover: ");
+                        y2 = sc.nextInt();
+                        turnos = 1;
+                    }
+
+                    if (turnos == 1) {
+
+                        int x1;
+                        int y1;
+                        int x2;
+                        int y2;
+                        System.out.println("Ingrese la coordenada en x de la pieza que desea mover: ");
+                        x1 = sc.nextInt();
+                        System.out.println("Ingrese la coordenada en y de la pieza que desea mover: ");
+                        y1 = sc.nextInt();
+                        System.out.println("Ingrese la coordenada en x adonde  desea mover: ");
+                        x2 = sc.nextInt();
+                        System.out.println("Ingrese la coordenada en y adonde desea mover: ");
+                        y2 = sc.nextInt();
+                        turnos = 0;
+
+                    }
+
                     imprimir(tablero);
 
                 }
