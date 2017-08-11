@@ -5,11 +5,37 @@
  */
 package lab4_ricardoromero_jeancarlosoto;
 
+import java.awt.Color;
+
 /**
  *
  * @author ricky
  */
 public class Arqueros extends Piezas{
+    
+    String nombre;
+
+    public Arqueros() {
+        super();
+    }
+
+    public Arqueros(String nombre, Color color, String material) {
+        super(color, material);
+        this.nombre = nombre;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        nombre = "A";
+    }
+
+    @Override
+    public String toString() {
+        return "Arqueros{" + "nombre=" + nombre + '}';
+    }
 
     @Override
     public void movimiento() {

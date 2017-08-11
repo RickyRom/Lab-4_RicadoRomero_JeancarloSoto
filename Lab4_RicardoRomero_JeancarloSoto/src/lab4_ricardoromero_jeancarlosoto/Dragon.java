@@ -5,11 +5,37 @@
  */
 package lab4_ricardoromero_jeancarlosoto;
 
+import java.awt.Color;
+
 /**
  *
  * @author ricky
  */
 public class Dragon extends Piezas{
+    
+    String nombre;
+
+    public Dragon() {
+        super();
+    }
+
+    public Dragon(String nombre, Color color, String material) {
+        super(color, material);
+        this.nombre = nombre;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        nombre = "F";
+    }
+
+    @Override
+    public String toString() {
+        return "Dragon{" + "nombre=" + nombre + '}';
+    }
 
     @Override
     public void movimiento() {

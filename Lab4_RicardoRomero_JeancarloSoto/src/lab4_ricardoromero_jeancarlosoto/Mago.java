@@ -5,11 +5,38 @@
  */
 package lab4_ricardoromero_jeancarlosoto;
 
+import java.awt.Color;
+
 /**
  *
  * @author ricky
  */
 public class Mago extends Piezas{
+    
+    String nombre;
+
+    public Mago() {
+        super();
+    }
+
+    public Mago(String nombre, Color color, String material) {
+        super(color, material);
+        this.nombre = nombre;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        nombre = "M";
+    }
+
+    @Override
+    public String toString() {
+        return "Mago{" + "nombre=" + nombre + '}';
+    }
+    
 
     @Override
     public void movimiento() {
