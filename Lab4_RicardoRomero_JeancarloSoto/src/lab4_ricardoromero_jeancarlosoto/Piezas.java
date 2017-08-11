@@ -44,6 +44,6 @@ public abstract class Piezas {
         return "Piezas{" + "color=" + color + ", material=" + material + '}';
     }
     
-    public abstract String[][] movimiento();
-    public abstract String[][] comer();
+    public abstract String[][] movimiento(String[][] matriz, int x1, int y1, int x2, int y2);
+    public abstract String[][] comer(String[][] matriz, int x1, int y1, int x2, int y2);
 }

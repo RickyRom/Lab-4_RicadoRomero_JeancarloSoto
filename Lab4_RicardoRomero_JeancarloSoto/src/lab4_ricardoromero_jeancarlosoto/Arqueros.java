@@ -37,11 +37,11 @@ public class Arqueros extends Piezas{
         return nombre;
     }
 
-    public String movimiento() {
+    public String[][] movimiento(String[][] matriz, int x1, int y1, int x2, int y2) {
         
     }
 
-    public String comer() {
+    public String[][] comer(String[][] matriz, int x1, int y1, int x2, int y2) {
         
     }
     

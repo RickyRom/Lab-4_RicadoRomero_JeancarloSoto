@@ -37,13 +37,13 @@ public class Caballeros extends Piezas{
         return nombre;
     }
     
-    @Override
-    public String movimiento() {
+   
+    public String[][] movimiento(String[][] matriz, int x1, int y1, int x2, int y2) {
         
     }
 
-    @Override
-    public String comer() {
+    
+    public String[][] comer(String[][] matriz, int x1, int y1, int x2, int y2) {
         
     }
     
