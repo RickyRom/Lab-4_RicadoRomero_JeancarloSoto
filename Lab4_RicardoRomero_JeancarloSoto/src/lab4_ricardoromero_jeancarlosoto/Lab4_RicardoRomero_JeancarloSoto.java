@@ -21,8 +21,6 @@ public class Lab4_RicardoRomero_JeancarloSoto {
      */
     public static void main(String[] args) {
 
-        
-
         // TODO code application logic here
         System.out.println("Bienvenido a su nuevoi juego de mesa mejorado");
         char r = 's';
@@ -39,7 +37,8 @@ public class Lab4_RicardoRomero_JeancarloSoto {
                     + "5-Salir\n");
             menuprincipal = sc.nextInt();
             switch (menuprincipal) {
-                case 1: {//Agregar
+                case 1: {
+//Agregar
 
                     Jugador j = new Jugador();
                     System.out.println("Ingrese nombre");
@@ -63,31 +62,67 @@ public class Lab4_RicardoRomero_JeancarloSoto {
 
                 }
                 break;
-                case 2: {//ELiminar
-                    
+                case 2: {
+//ELiminar
+                    int pos;
+                    System.out.println("A continuacion se le muestran los jugadores");
+                    int cont = 0;
+                    for (Object jug : jugadores) {
+                        System.out.println("[" + cont + "]" + jug);
+                        cont++;
+                    }
+
+                    System.out.println("Elija la posicion del jugador que desea eliminar");
+                    pos = sc.nextInt();
+                    jugadores.remove(pos);
                 }
                 break;
-                case 3: {//Listarc
-                   int cont=0;
+                case 3: {
+//Listar 
+                    int cont = 0;
                     for (Object jug : jugadores) {
-                        System.out.println("["+cont+"]"+jug);
+                        System.out.println("[" + cont + "]" + jug);
                         cont++;
                     }
                 }
                 break;
                 case 4: {//Jugar
-
+                   
+                    String [][] tablero=Matriz();
+                    imprimir(tablero);
+                   
+                    
                 }
                 break;
                 case 5: {//Salir
                     r = 'n';
+                    System.out.println("Gracias por jugar, Le esperamos de vuelta pronto");
                 }
                 break;
 
             }
         } while (r != 'n');
 
+    }
+     public static  String [][] Matriz() {
+        String[][] temporal = new String[10][10];
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                temporal[i][j] = " ";
+            }
+        }
+        return temporal;
+    }
+
+    public  static void imprimir(String[][] imp) {
+        for (int i = 0; i < imp.length; i++) {
+            for (int j = 0; j < imp[i].length; j++) {
+                System.out.print("[" + imp[i][j] + "]");
+            }
+            System.out.println("");
+        }
 
     }
+    
 
 }
