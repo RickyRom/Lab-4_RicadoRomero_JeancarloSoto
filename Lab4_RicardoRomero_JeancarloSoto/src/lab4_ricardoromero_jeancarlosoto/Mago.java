@@ -11,7 +11,7 @@ import java.awt.Color;
  *
  * @author ricky
  */
-public class Mago extends Piezas{
+public  class Mago extends Piezas{
     
     String nombre = "M";
     
@@ -37,7 +37,13 @@ public class Mago extends Piezas{
         return nombre;
     }
     
+
     
+    @Override
+    public String[][] movimiento(String[][] matriz, int x1, int y1, int x2, int y2) {
+        String tempo[][] = new String[10][10];
+        return tempo;
+    }
     @Override
     public String[][] comer(String[][] matriz, int x1, int y1, int x2, int y2) {
         int cont = 0;
@@ -45,11 +51,5 @@ public class Mago extends Piezas{
         if (x1 == y1 && x2 == y2) {
         }
         return temporal;
-    }
-
-    @Override
-    public String[][] movimiento(String[][] matriz, int x1, int y1, int x2, int y2) {
-        String tempo[][] = new String[10][10];
-        return tempo;
     }
 }

@@ -144,6 +144,15 @@ public class Lab4_RicardoRomero_JeancarloSoto {
                         int y1;
                         int x2;
                         int y2;
+                        
+                        System.out.println("Jugador 1 Ingrese la coordenada en x de la pieza que desea mover: ");
+                        x1 = sc.nextInt();
+                        System.out.println("Jugador 1 Ingrese la coordenada en y de la pieza que desea mover: ");
+                        y1 = sc.nextInt();
+                        System.out.println("Jugador 1 Ingrese la coordenada en x adonde desea mover: ");
+                        x2 = sc.nextInt();
+                        System.out.println("Jugador 1 Ingrese la coordenada en y adonde desea mover: ");
+                        y2 = sc.nextInt();
                         System.out.println("1-Mover Rey\n"
                                 + "2-Mover mago\n"
                                 + "3-Mover Dragon\n"
@@ -178,14 +187,6 @@ public class Lab4_RicardoRomero_JeancarloSoto {
                             }
                             break;
                         }
-                        System.out.println("Jugador 1 Ingrese la coordenada en x de la pieza que desea mover: ");
-                        x1 = sc.nextInt();
-                        System.out.println("Jugador 1 Ingrese la coordenada en y de la pieza que desea mover: ");
-                        y1 = sc.nextInt();
-                        System.out.println("Jugador 1 Ingrese la coordenada en x adonde desea mover: ");
-                        x2 = sc.nextInt();
-                        System.out.println("Jugador 1 Ingrese la coordenada en y adonde desea mover: ");
-                        y2 = sc.nextInt();
                         turnos = 1;
 
                     }
@@ -204,6 +205,40 @@ public class Lab4_RicardoRomero_JeancarloSoto {
                         x2 = sc.nextInt();
                         System.out.println("Jugador 2 Ingrese la coordenada en y adonde desea mover: ");
                         y2 = sc.nextInt();
+                        System.out.println("1-Mover Rey\n"
+                                + "2-Mover mago\n"
+                                + "3-Mover Dragon\n"
+                                + "4-Mover Duende\n"
+                                + "5-Mover arquero\n"
+                                + "6-Mover caballero\n");
+                        int movimiento = sc.nextInt();
+                        switch (movimiento) {
+                            case 1: {
+
+                            }
+                            break;
+                            case 2: {
+                                Mago mm = new Mago();
+                                mm.movimiento(tablero,x1,y1,x2,y2);
+                            }
+                            break;
+                            case 3: {
+
+                            }
+                            break;
+                            case 4: {
+
+                            }
+                            break;
+                            case 5: {
+
+                            }
+                            break;
+                            case 6: {
+
+                            }
+                            break;
+                        }
                         turnos = 0;
 
                     }
