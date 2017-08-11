@@ -13,7 +13,7 @@ import java.awt.Color;
  */
 public class Rey extends Piezas{
     
-    String nombre;
+    String nombre = "R";
 
     public Rey() {
         super();
@@ -34,7 +34,7 @@ public class Rey extends Piezas{
 
     @Override
     public String toString() {
-        return "Rey{" + "nombre=" + nombre + '}';
+        return nombre;
     }
 
     @Override

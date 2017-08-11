@@ -13,7 +13,7 @@ import java.awt.Color;
  */
 public class Arqueros extends Piezas{
     
-    String nombre;
+    String nombre = "A";
 
     public Arqueros() {
         super();
@@ -34,7 +34,7 @@ public class Arqueros extends Piezas{
 
     @Override
     public String toString() {
-        return "Arqueros{" + "nombre=" + nombre + '}';
+        return nombre;
     }
 
     @Override

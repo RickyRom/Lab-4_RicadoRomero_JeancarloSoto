@@ -13,7 +13,7 @@ import java.awt.Color;
  */
 public class Dragon extends Piezas{
     
-    String nombre;
+    String nombre = "F";
 
     public Dragon() {
         super();
@@ -34,7 +34,7 @@ public class Dragon extends Piezas{
 
     @Override
     public String toString() {
-        return "Dragon{" + "nombre=" + nombre + '}';
+        return nombre;
     }
 
     @Override

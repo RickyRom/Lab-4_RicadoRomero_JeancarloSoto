@@ -13,7 +13,7 @@ import java.awt.Color;
  */
 public class Caballeros extends Piezas{
     
-    String nombre;
+    String nombre = "C";
 
     public Caballeros() {
         super();
@@ -34,7 +34,7 @@ public class Caballeros extends Piezas{
 
     @Override
     public String toString() {
-        return "Caballeros{" + "nombre=" + nombre + '}';
+        return nombre;
     }
     
     @Override

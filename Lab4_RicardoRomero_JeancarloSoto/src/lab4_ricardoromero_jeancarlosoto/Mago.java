@@ -13,7 +13,7 @@ import java.awt.Color;
  */
 public class Mago extends Piezas{
     
-    String nombre;
+    String nombre = "M";
 
     public Mago() {
         super();
@@ -34,7 +34,7 @@ public class Mago extends Piezas{
 
     @Override
     public String toString() {
-        return "Mago{" + "nombre=" + nombre + '}';
+        return nombre;
     }
     
 
