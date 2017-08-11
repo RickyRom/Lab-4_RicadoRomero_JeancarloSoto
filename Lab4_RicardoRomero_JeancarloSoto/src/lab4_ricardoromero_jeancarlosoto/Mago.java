@@ -11,7 +11,7 @@ import java.awt.Color;
  *
  * @author ricky
  */
-public abstract class Mago extends Piezas{
+public  class Mago extends Piezas{
     
     String nombre = "M";
     
