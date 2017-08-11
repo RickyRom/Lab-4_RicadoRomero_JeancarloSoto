@@ -9,12 +9,20 @@ package lab4_ricardoromero_jeancarlosoto;
  *
  * @author ricky
  */
-public class Lab4_RicardoRomero_JeancarloSoto {
+public class Caballeros extends Piezas{
+    
+    
+    
+    
+    
+    
+    @Override
+    public void movimiento() {
+        
+    }
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
+    @Override
+    public void comer() {
         
     }
     
