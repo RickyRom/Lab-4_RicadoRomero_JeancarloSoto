@@ -87,11 +87,55 @@ public class Lab4_RicardoRomero_JeancarloSoto {
                 }
                 break;
                 case 4: {//Jugar
-                   
-                    String [][] tablero=Matriz();
+
+                    String[][] tablero = Matriz();
+
+                    Mago mago = new Mago();
+                    Arqueros arqueros = new Arqueros();
+                    Caballeros caballeros = new Caballeros();
+                    Dragon dragon = new Dragon();
+                    Duendes duende = new Duendes();
+                    Rey rey = new Rey();
+                    //COLOCANDO CABALLEROS
+                    tablero[0][0] = caballeros.getNombre();
+                    tablero[0][9] = caballeros.getNombre();
+                    tablero[1][4] = caballeros.getNombre();
+                    tablero[9][0] = caballeros.getNombre();
+                    tablero[8][5] = caballeros.getNombre();
+                    tablero[9][9] = caballeros.getNombre();
+                    //COLOCANDO MAGOS 
+                    tablero[0][5] = mago.getNombre();
+                    tablero[9][4] = mago.getNombre();
+                    //COLOCANDO ARQUEROS 
+                    tablero[1][2] = arqueros.getNombre();
+                    tablero[0][3] = arqueros.getNombre();
+                    tablero[0][6] = arqueros.getNombre();
+                    tablero[1][7] = arqueros.getNombre();
+                    tablero[8][2] = arqueros.getNombre();
+                    tablero[9][3] = arqueros.getNombre();
+                    tablero[9][6] = arqueros.getNombre();
+                    tablero[8][7] = arqueros.getNombre();
+                    //COLOCANDO DUENDES
+                    tablero[1][0] = duende.getNombre();
+                    tablero[1][3] = duende.getNombre();
+                    tablero[1][6] = duende.getNombre();
+                    tablero[1][9] = duende.getNombre();
+                    tablero[8][0] = duende.getNombre();
+                    tablero[8][3] = duende.getNombre();
+                    tablero[8][6] = duende.getNombre();
+                    tablero[8][9] = duende.getNombre();
+                    //COLOCANDO REY
+                    tablero[0][4] = rey.getNombre();
+                    tablero[9][5] = rey.getNombre();
+                    //COLOCANDO DRAGON 
+                    tablero[9][2] = dragon.getNombre();
+                    tablero[8][4] = dragon.getNombre();
+                    tablero[9][7] = dragon.getNombre();
+                    tablero[0][2] = dragon.getNombre();
+                    tablero[1][5] = dragon.getNombre();
+                    tablero[0][7] = dragon.getNombre();
                     imprimir(tablero);
-                   
-                    
+
                 }
                 break;
                 case 5: {//Salir
@@ -104,7 +148,8 @@ public class Lab4_RicardoRomero_JeancarloSoto {
         } while (r != 'n');
 
     }
-     public static  String [][] Matriz() {
+
+    public static String[][] Matriz() {
         String[][] temporal = new String[10][10];
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
@@ -114,7 +159,7 @@ public class Lab4_RicardoRomero_JeancarloSoto {
         return temporal;
     }
 
-    public  static void imprimir(String[][] imp) {
+    public static void imprimir(String[][] imp) {
         for (int i = 0; i < imp.length; i++) {
             for (int j = 0; j < imp[i].length; j++) {
                 System.out.print("[" + imp[i][j] + "]");
@@ -123,6 +168,5 @@ public class Lab4_RicardoRomero_JeancarloSoto {
         }
 
     }
-    
 
 }
