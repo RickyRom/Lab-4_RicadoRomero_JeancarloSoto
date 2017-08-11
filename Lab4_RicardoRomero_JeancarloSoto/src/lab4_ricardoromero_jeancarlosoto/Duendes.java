@@ -38,12 +38,12 @@ public class Duendes extends Piezas{
     }
     
     @Override
-    public void movimiento() {
+    public String movimiento() {
         
     }
 
     @Override
-    public void comer() {
+    public String comer() {
         
     }
     

@@ -38,13 +38,12 @@ public class Mago extends Piezas{
     }
     
 
-    @Override
-    public void movimiento() {
-        
+    public String[][] movimiento(String[][] matriz, int x1, int y1, int x2, int y2) {
+        String tempo[][] = new String[10][10];
+        return tempo;
     }
 
-    @Override
-    public void comer() {
+    public String[][] comer() {
         
     }
     
