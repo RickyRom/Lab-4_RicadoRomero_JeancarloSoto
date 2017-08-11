@@ -11,7 +11,7 @@ import java.awt.Color;
  *
  * @author ricky
  */
-public class Mago extends Piezas{
+public abstract class Mago extends Piezas{
     
     String nombre = "M";
     
@@ -43,8 +43,5 @@ public class Mago extends Piezas{
         return tempo;
     }
 
-    public String[][] comer() {
-        
-    }
-    
+
 }
