@@ -153,55 +153,69 @@ public class Lab4_RicardoRomero_JeancarloSoto {
                         x2 = sc.nextInt();
                         System.out.println("Jugador 1 Ingrese la coordenada en y adonde desea mover: ");
                         y2 = sc.nextInt();
-                        System.out.println("1-Mover Rey\n"
-                                + "2-Mover mago\n"
-                                + "3-Mover Dragon\n"
-                                + "4-Mover Duende\n"
-                                + "5-Mover arquero\n"
-                                + "6-Mover caballero\n");
-                        int movimiento = sc.nextInt();
-                        switch (movimiento) {
-                            case 1: {
-                                Rey rr = new Rey();
-                                rr.movimiento(tablero, x1, y1, x2, y2);
-                            }
-                            break;
-                            case 2: {
-                                Mago mm = new Mago();
-                                mm.movimiento(tablero, x1, y1, x2, y2);
-                            }
-                            break;
-                            case 3: {
-                                Dragon dd = new Dragon();
-                                dd.movimiento(tablero, x1, y1, x2, y2);
-                            }
-                            break;
-                            case 4: {
-                                Duendes ddd = new Duendes();
-                                ddd.movimiento(tablero, x1, y1, x2, y2);
-                            }
-                            break;
-                            case 5: {
-                                Arqueros aa = new Arqueros();
-                                aa.movimiento(tablero, x1, y1, x2, y2);
-                            }
-                            break;
-                            case 6: {
-                                Caballeros cc = new Caballeros();
-                                cc.movimiento(tablero, x1, y1, x2, y2);
-                            }
-                            break;
-                        }
-                        turnos = 1;
 
+                        int movimiento = 0;
+
+                        try {
+                            System.out.println("1-Mover Rey\n"
+                                    + "2-Mover mago\n"
+                                    + "3-Mover Dragon\n"
+                                    + "4-Mover Duende\n"
+                                    + "5-Mover arquero\n"
+                                    + "6-Mover caballero\n");
+                            movimiento = sc.nextInt();
+                            while (movimiento == 1) {
+                                System.out.println("El rey no se puede mover, ingrese nuevamente una opcion");
+                                movimiento = sc.nextInt();
+                            }
+                            switch (movimiento) {
+                                case 1: {
+                                    Rey rr = new Rey();
+                                    rr.movimiento(tablero, x1, y1, x2, y2);
+                                }
+                                break;
+                                case 2: {
+                                    Mago mm = new Mago();
+                                    mm.movimiento(tablero, x1, y1, x2, y2);
+                                }
+                                break;
+                                case 3: {
+                                    Dragon dd = new Dragon();
+                                    dd.movimiento(tablero, x1, y1, x2, y2);
+                                }
+                                break;
+                                case 4: {
+                                    Duendes ddd = new Duendes();
+                                    ddd.movimiento(tablero, x1, y1, x2, y2);
+                                }
+                                break;
+                                case 5: {
+                                    Arqueros aa = new Arqueros();
+                                    aa.movimiento(tablero, x1, y1, x2, y2);
+                                }
+                                break;
+                                case 6: {
+                                    Caballeros cc = new Caballeros();
+                                    cc.movimiento(tablero, x1, y1, x2, y2);
+                                }
+                                break;
+                            }
+                        } catch (Exception e) {
+                            System.out.println("Error-Ingreso un dato incorrecto");
+                        }
+                        Caballeros cc=new Caballeros();
+                        String [][] matriz111 = cc.movimiento(tablero, x1, y1, x2, y2);
+                        imprimir(matriz111);
                     }
+                    turnos = 1;
 
                     if (turnos == 1) {
 
-                        int x1;
-                        int y1;
-                        int x2;
-                        int y2;
+                        int x1 = 0;
+                        int y1 = 0;
+                        int x2 = 0;
+                        int y2 = 0;
+                        sc = new Scanner(System.in);
                         System.out.println("Jugador 2 Ingrese la coordenada en x de la pieza que desea mover: ");
                         x1 = sc.nextInt();
                         System.out.println("Jugador 2 Ingrese la coordenada en y de la pieza que desea mover: ");
@@ -210,45 +224,57 @@ public class Lab4_RicardoRomero_JeancarloSoto {
                         x2 = sc.nextInt();
                         System.out.println("Jugador 2 Ingrese la coordenada en y adonde desea mover: ");
                         y2 = sc.nextInt();
-                        System.out.println("1-Mover Rey\n"
-                                + "2-Mover mago\n"
-                                + "3-Mover Dragon\n"
-                                + "4-Mover Duende\n"
-                                + "5-Mover arquero\n"
-                                + "6-Mover caballero\n");
-                        int movimiento = sc.nextInt();
-                        switch (movimiento) {
-                            case 1: {
-                                Rey rr = new Rey();
-                                rr.movimiento(tablero, x1, y1, x2, y2);
+                        int movimiento;
+                        try {
+                            System.out.println("1-Mover Rey\n"
+                                    + "2-Mover mago\n"
+                                    + "3-Mover Dragon\n"
+                                    + "4-Mover Duende\n"
+                                    + "5-Mover arquero\n"
+                                    + "6-Mover caballero\n");
+                            movimiento = sc.nextInt();
+                            while (movimiento == 1) {
+                                System.out.println("El rey no se puede mover, ingrese nuevamente una opcion");
+                                movimiento = sc.nextInt();
                             }
-                            break;
-                            case 2: {
-                                Mago mm = new Mago();
-                                mm.movimiento(tablero, x1, y1, x2, y2);
+                            switch (movimiento) {
+                                case 1: {
+                                    Rey rr = new Rey();
+                                    rr.movimiento(tablero, x1, y1, x2, y2);
+                                }
+                                break;
+                                case 2: {
+                                    Mago mm = new Mago();
+                                    mm.movimiento(tablero, x1, y1, x2, y2);
+                                }
+                                break;
+                                case 3: {
+                                    Dragon dd = new Dragon();
+                                    dd.movimiento(tablero, x1, y1, x2, y2);
+                                }
+                                break;
+                                case 4: {
+                                    Duendes ddd = new Duendes();
+                                    ddd.movimiento(tablero, x1, y1, x2, y2);
+                                }
+                                break;
+                                case 5: {
+                                    Arqueros aa = new Arqueros();
+                                    aa.movimiento(tablero, x1, y1, x2, y2);
+                                }
+                                break;
+                                case 6: {
+                                    Caballeros cc = new Caballeros();
+                                    cc.movimiento(tablero, x1, y1, x2, y2);
+                                }
+                                break;
                             }
-                            break;
-                            case 3: {
-                                Dragon dd = new Dragon();
-                                dd.movimiento(tablero, x1, y1, x2, y2);
-                            }
-                            break;
-                            case 4: {
-                                Duendes ddd = new Duendes();
-                                ddd.movimiento(tablero, x1, y1, x2, y2);
-                            }
-                            break;
-                            case 5: {
-                                Arqueros aa = new Arqueros();
-                                aa.movimiento(tablero, x1, y1, x2, y2);
-                            }
-                            break;
-                            case 6: {
-                                Caballeros cc = new Caballeros();
-                                cc.movimiento(tablero, x1, y1, x2, y2);
-                            }
-                            break;
+                        } catch (Exception e) {
+                            System.out.println("Error-Ingreso un dato incorrecto");
                         }
+                           Caballeros cc=new Caballeros();
+                        String [][] matriz111 = cc.movimiento(tablero, x1, y1, x2, y2);
+                        imprimir(matriz111);
                         turnos = 0;
 
                     }
