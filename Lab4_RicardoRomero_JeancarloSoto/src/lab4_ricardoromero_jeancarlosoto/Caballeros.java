@@ -44,7 +44,7 @@ public class Caballeros extends Piezas{
              matriz[x2][y2] = matriz[x1][y1];
              matriz[x1][y1] = "";
          }
-        return tempo;
+        return matriz;
     }
 
     

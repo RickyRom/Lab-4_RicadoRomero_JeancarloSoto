@@ -39,7 +39,11 @@ public class Duendes extends Piezas{
     
     public String[][] movimiento(String[][] matriz, int x1, int y1, int x2, int y2) {
          String tempo[][] = new String[10][10];
-        return tempo;
+         if (matriz[x1][y1].contains("D")) {
+             matriz[x2][y2] = matriz[x1][y1];
+             matriz[x1][y1] = "";
+         }
+        return matriz;
     }
 
     public String[][] comer(String[][] matriz, int x1, int y1, int x2, int y2) {
